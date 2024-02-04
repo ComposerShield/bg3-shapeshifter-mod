@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="6" build="5"/>
+    <region id="Progressions">
+        <node id="root">
+            <children>
+                <node id="Progression"> Mainclass Level 1
+                    <attribute id="AllowImprovement" type="bool" value="false"/> Whether your class get a feat at his level. Does not work for level 1.
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Charisma);Proficiency(SimpleWeapons);"/> Adds resource, proficiency, etc.
+                    <attribute id="Level" type="uint8" value="1"/> Class Level for this entry
+                    <attribute id="Name" type="LSString" value="Shapeshifter"/> Name of the class, keep it consistent with class description
+                    <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
+                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(PASSIVE_LIST_UUID,1);SelectSkills(SKILL_LIST_UUID,3);SelectSpells(SPELL_LIST_UUID,3,0,,,,AlwaysPrepared);SelectSpells(SPELL_LIST_UUID,4,0)"/> this is where you can have your class select spells from spell list, passive from passive list, and skill from skill list. Select ability bonus let you get the +2/+1 at CC
+					<attribute id="TableUUID" type="guid" value="0b35a2e1-96d5-45d0-923d-0e1a00e34ebb"/> Same UUID as the one in ClassDescriptions.lsx this refers to the entire table
+                    <attribute id="UUID" type="guid" value="deda6cdc-ab3e-4155-a6e0-2256a1242f26"/> a Unique UUID specificaly for this entry within the table
+                </node>
+            </children>
+        </node>
+    </region>
+</save>
